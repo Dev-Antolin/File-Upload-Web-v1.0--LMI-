@@ -1,0 +1,507 @@
+﻿body{
+	background-color: #ffffff;
+	margin: 0;
+	padding: 0;
+    font-family: Arial;
+}
+
+div#outerDiv{
+	width: 950px;
+	margin: 0 auto;
+
+}
+
+div#header
+{
+	background-image:url('../images/banner1.jpg');
+	height: 140px;
+    width:950px;
+	min-width:949px;
+    margin-left: auto;   margin-right: auto;   width: 8em;
+   -moz-border-radius: 15px; /* Firefox */
+   -webkit-border-radius: 15px; /* Safari and Chrome */
+  
+  -moz-box-shadow: 10px 10px 20px #000; /* Firefox */
+  -webkit-box-shadow: 10px 10px 20px #000; /* Safari and Chrome */
+ 
+ 
+   
+}
+
+div#menuDiv{
+	background-color: #2d2d2d;
+	margin: 0 auto;
+	
+	margin-bottom: 5px;
+	width: 950px;
+    height: 30px;
+    margin-top:2px;
+}
+
+div#menuHolder
+{
+    width: 950px;
+    height: 30px;
+   
+    
+}
+
+div#content
+{
+	background: #E4E6E7;
+	
+	
+	padding:5px 0 5px 0;
+	width: 950px;
+	height: inherit;
+	min-height: 120px;
+		margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+}
+
+div#footerDiv
+{
+	background-color: #2d2d2d;
+	margin: 0 auto;
+	width: 950px;
+    height: 70px;
+	
+}
+
+div#labelFooter{
+	width: 950px;
+	height: 48px;
+	margin: 0 auto;
+}
+
+div#leftLabel
+{
+	position:relative;
+	color: #ffffff;
+	padding: 20px 0 0 5px;
+	font-family: "Arial";
+	font-size: 1em;
+	float: left;
+}
+
+div#rightLabel
+{
+	position:relative;
+	color: #ffffff;
+	padding: 20px 0 5px 0;
+	font-family: "Arial";
+	font-size: 1em;
+	float: right;
+}
+
+.column{ -webkit-border-top-left-radius:12px; -webkit-border-top-right-radius:12px; -webkit-border-bottom-right-radius:12px; -webkit-border-bottom-left-radius:12px;
+	background-color: #E4E6E7;
+	width: 180px; 
+	height: inherit;
+	float: left; 
+	padding: 15px 5px 0 5px;
+}
+
+.column2{ -webkit-border-top-left-radius:12px; -webkit-border-top-right-radius:12px; -webkit-border-bottom-right-radius:12px; -webkit-border-bottom-left-radius:12px;
+background-color: #E4E6E7; 
+width:741px; 
+height: inherit;
+min-height: 650px;
+float: left;
+padding: 0 5px 0 0;
+}
+
+#spacer
+{
+	width: 5px;
+	height: 1px;
+	float: left;
+}
+
+div#greetingDiv
+{ 
+
+	width: 179px;
+	height: 50px;
+}
+
+div#logout
+{
+	padding-top: 15px; 
+	margin: 0 auto; 
+	text-align: center; 
+}
+
+div#logout a:link, a:visited
+{
+	float: left;
+	padding-left: 125px;
+	font-size: 12px; 
+	font-family: Arial;
+	text-decoration: none;
+	color: #36393c;
+}
+
+div#logout a:hover, a:active
+{
+	float: left;
+	padding-left: 125px;
+	font-size: .8em; 
+	font-weight: bold; 
+	font-family: Arial;
+	text-decoration: underline;
+	color: #36393c;
+}
+
+/* =========================================================  other css  =======================================================================
+
+/*Credits: Dynamic Drive CSS Library */
+/*URL: http://www.dynamicdrive.com/style/ */
+
+.suckertreemenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+background-color: rgb(45,45,45);
+}
+
+/*Top level list items*/
+.suckertreemenu ul li
+{
+    position: relative;
+    display: inline;
+    float: left;
+   background-color: rgb(45,45,45);
+    color: #FFFFFF;
+    font-family: Arial;
+}
+
+/*Top level menu link items style*/
+.suckertreemenu ul li a
+{
+    border-left-width: 0;
+    border-width: 1px;
+    border-color: #FFFFFF;
+    border-style: none none none solid;
+    display: block;
+    /*_width: 100px; /*Width of top level menu link items*/
+    padding: 1px 8px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: Arial;
+    font-size: 12px;
+    background-color: rgb(45,45,45);
+}
+	
+/*1st sub level menu*/
+.suckertreemenu ul li ul
+{
+    left: 0;
+    position: absolute;
+    top: 1em; /* no need to change, as true value set by script */
+    display: block;
+    visibility: hidden;
+    color: #FFFFFF;
+    background-color: rgb(45,45,45);
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.suckertreemenu ul li ul li
+{
+    display: list-item;
+    float: none;
+    color: #FFFFFF;
+    background-color: rgb(45,45,45);
+}
+
+/*All subsequent sub menu levels offset after 1st level sub menu */
+.suckertreemenu ul li ul li ul
+{
+    /*left: 159px; /* no need to change, as true value set by script */
+    top: 0;
+    background-color: rgb(45,45,45);
+}
+
+/* Sub level menu links style */
+.suckertreemenu ul li ul li a
+{
+    display: block;
+    /*width: 140px; /*width of sub menu levels*/
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 1px 5px;
+    border: 1px solid #ccc;
+    background-color: rgb(45,45,45);
+}
+
+.suckertreemenu ul li a:hover
+{
+    background-color: rgb(45,45,45);
+    color: rgb(253,160,91);
+}
+
+
+/*Background image for top level menu list links */
+.suckertreemenu .mainfoldericon{
+background-color: rgb(45,45,45);
+}
+
+/*Background image for subsequent level menu list links */
+.suckertreemenu .subfoldericon{
+background-color: rgb(45,45,45);
+}
+
+* html p#iepara{ /*For a paragraph (if any) that immediately follows suckertree menu, add 1em top spacing between the two in IE*/
+padding-top: 1em;
+}
+	
+/* Holly Hack for IE \*/
+* html .suckertreemenu ul li { float: left; height: 1%; }
+* html .suckertreemenu ul li a { height: 1%; }
+* html .suckertreemenu ul li ul li { float: left;}
+/* End */
+
+.watermarked { color:Silver ;}
+
+.watermarkedbackground
+{
+    background-color: #EDEAE1;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: left;
+    text-transform:uppercase ;
+}
+.watermarkedbackgroundRight
+{
+    background-color: #EDEAE1;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: right;
+    text-transform:uppercase ;
+}
+ .txtUppercase 
+ { 
+   text-transform:uppercase ;
+   font-family: Arial;
+    font-size: 12px;
+   } 
+
+/*modal pop  up*/
+.ModalStyle
+    {
+        background-color: #CCBFBF;
+        
+       
+    }
+
+    .drag
+    {
+    	background-image:url('../images/modalbg.png');
+        background-repeat:repeat;        
+        width: 500px;
+        padding: 10px 10px 10px 10px;      
+       
+    }
+    
+    .drag > div
+	{
+		background-color:White;
+		padding: 10px 5px 15px 5px;
+		border: 1px solid rgb(100,135,220);
+		background-repeat: repeat;
+		
+	}
+
+    .gridContainer
+    {        
+    }
+    .closeContainer
+    {
+        height: 20px;
+        background: rgb(100,135,220);       
+    }
+    .closeButton
+    {
+        padding: auto auto 5px auto;
+        float: right;
+    }
+    .GVtxtSearch
+    {
+        padding-top: 10px;
+        padding-left: 5px;
+        padding-bottom: 1px;
+        height: 25px;
+        width:393px;
+        border-bottom: solid 5px rgb(100,135,220);
+       
+    }
+    .GVData
+    {
+        padding-top: 5px;
+        padding-left: 5px;
+        height: 250px;        
+        padding-bottom: 3px;
+        overflow: auto;
+    }
+    
+    .GVDataMaintenance
+    {
+        padding-top: 5px;
+        /*height: 400px;*/
+        padding-bottom: 3px;
+        overflow: auto;
+        width:670px;
+        padding-left:2px;
+    }
+    
+    .searchArea
+	{
+		padding-bottom: 10px;
+		height: 25px;
+		border-bottom: solid 5px rgb(100,135,220);
+		width: 675px;
+	}
+	
+	.searchTable
+	{
+		font-size: x-small;
+		margin-bottom: 25px;
+	}
+	
+	.SearchTxtBox 
+	{
+		width: 350px;
+		background-color: rgb(240,240,240);	
+	}
+
+	.SearchLabel
+	{
+		width:130px;
+	} 
+	
+	.EntryArea
+	{
+		padding-bottom: 10px;
+		height: 25px;
+		border-bottom: solid 5px rgb(100,135,220);
+		width: 400px;
+	}
+	
+	.cajasombra
+	{
+		background: rgba(0,0,0,0.7);
+		border: 1px solid rgba(255,255,255,0.3);
+		/*border-radius: 12px;*/
+		-moz-border-radius: 12px;
+		/*box-shadow:0px 5px 10px rgba(0,0,0,0.7);*/
+		-webkit-box-shadow:0px 5px 10px rgba(0,0,0,0.7);
+		-moz-box-shadow:0px 5px 10px rgba(0,0,0,0.7);
+	}
+	
+	.srcBtn
+{
+	color: #FFFFFF;
+	background: transparent url('../images/btnSearch.png' ) no-repeat;
+	width: 20px;
+	font-size: 11px;
+	font-style: normal;
+	font-family: Arial, Helvetica, sans-serif;
+	height: 25px;	
+	text-align: center;
+	vertical-align: middle;
+	border-style:none;
+	
+} 
+
+.srcBtn:hover
+{
+	color: #000000;
+}
+
+#test
+{
+font-family: Calibri; 
+font-size: 19px; 
+font-weight: bold; 
+padding-left: 50px; 
+color: #0000FF;
+margin: 0;
+}
+
+div#mlkpUserInfo
+{
+    float: right;
+    height: 80px;
+    clear: left;
+    text-align: right;
+    padding-right: 10px;
+    color: #FFFFFF;
+}
+.buttonLogout
+{
+    background-color: #2d2d2d;
+    color: #0066FF;
+    cursor: pointer;
+}
+
+#centerscreen 
+{
+    width: 487px;
+    height: 259px;
+    
+    margin-left: 230px;
+    margin-right: 50px;
+    margin-top: 20px;    
+    padding: 20px 20px 20px 0px;
+}
+
+
+#footer
+{
+	width: 99.2%;
+	height: 25px;
+	background-color: #6C91FF;
+	z-index: 1;	
+	padding: 0 5px;
+}
+#footerlabel
+{
+	position:relative;
+	top: 5px;
+	left: 6px;
+	float:left;
+}
+#footerallrightsreserved
+{
+	position:relative;
+	top: 5px;
+	float:right;
+	height: 15px;
+	width: 124px;
+	right:-284px;
+	font-family:Tahoma;
+	font-size:10;
+	
+}
+
+.modalPopup {
+	background-color:#ffffdd;
+	border-width:3px;
+	border-style:solid;
+	border-color:Gray;
+	padding:3px;
+	text-align:center;
+}
+.hidden
+{
+	display: none;
+}
+.input
+{
+	text-align: right;
+}
+.Grid
+{
+	overflow: scroll; 
+}

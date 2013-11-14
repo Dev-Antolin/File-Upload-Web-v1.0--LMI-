@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMaster.master.cs" Inherits="MainMaster" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link rel="shortcut icon" href="../Images/application.ico" />
+<head id="Head1" runat="server">
+    <link href="CSS/Main.css" rel="stylesheet" type="text/css" />
+    <title>File Upload</title>
+    <style type="text/css">
+        .style3
+        {
+            color: #FFFFFF;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="outerDiv">
+        <div id="header">
+            <div id="mlkpLogo1">
+            </div>
+            <div id="mlkpLogo2">
+            </div>
+        </div>
+    </div>
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+    </asp:ToolkitScriptManager>
+    <div id="menuDiv">
+        <div id="menuHolder">
+            <span class="style3">File Upload v7.01</span>
+            <div id="mlkpUserInfo">
+                Welcome!
+                <asp:Label ID="lblName" runat="server" Text="FirstName LastName"></asp:Label>
+                <asp:Button ID="btnLogout" runat="server" Text="Logout" BorderStyle="None" CssClass="buttonLogout"
+                    Font-Underline="True" OnClick="btnLogout_Click" />
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div id="spacer">
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    <div id="footerDiv">
+        <div id="labelFooter">
+            <div id="leftLabel">
+                M.Lhuillier Philippines Inc.
+            </div>
+            <div id="rightLabel">
+                All Rights Reserved.
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
